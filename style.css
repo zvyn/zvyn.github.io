@@ -1,0 +1,24 @@
+body {
+  border-top: solid 0.5em rgb(0, 136, 204);
+  background-color: rgb(246,246,246);
+  text-align: center;
+  font-family: Arial, sans-serif;
+  text-rendering: optimizeLegibility;
+}
+
+h2 {
+  display: none;
+  font-weight: normal;
+}
+
+h3 {
+  font-weight: normal;
+  font-style: italic;
+  font-family: "Times New Roman", serif;
+}
+
+hr {
+  width: 68%;
+  margin-left: 16%;
+  border: solid thin rgb(0, 136, 204);
+}
