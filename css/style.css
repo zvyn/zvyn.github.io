@@ -22,3 +22,11 @@ hr {
   margin-left: 16%;
   border: solid thin rgb(0, 136, 204);
 }
+
+a {
+  color: rgb(0, 136, 204);
+}
+
+a:visited {
+  color: rgb(50, 50, 50);
+}

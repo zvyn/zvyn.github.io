@@ -16,10 +16,24 @@
         <!--[if lt IE 9 ]>
         	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
         <![endif]--> 
-        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
     </head>
  
     <body lang="en-US">
+        <article>
+        <script>
+            var article = document.getElementsByTagName('article')[0];
+            article.style.opacity = 0;
+            document.body.onload = function () {
+            var opacity = 0.01;
+            fade = setInterval(function() {
+              opacity += 0.1 * opacity;
+              if (opacity >= 0.99) {
+                clearInterval(fade);
+              }
+              article.style.opacity = opacity;
+            }, 1);
+            };
+        </script>
         <hgroup>
             <h1>Milan Oberkirch</h1>
             <h2>Developer &amp; Linux Enthusiast</h2>
@@ -38,6 +52,7 @@
             <a id="email-address" class="contact"
               href="mailto:zvynar@gmail.com">zvynar@gmail.com</a>.
         </p>
+      </article>
     </body>
 
 </html>
