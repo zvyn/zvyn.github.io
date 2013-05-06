@@ -28,10 +28,11 @@
             fade = setInterval(function() {
               opacity += 0.1 * opacity;
               if (opacity >= 0.99) {
+                opacity = 1;
                 clearInterval(fade);
               }
               article.style.opacity = opacity;
-            }, 1);
+            }, 5);
             };
         </script>
         <hgroup>
