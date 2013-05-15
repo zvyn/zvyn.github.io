@@ -20,9 +20,6 @@
 
     <body lang="en-US">
     <article>
-      <!--[if !IE]> -->
-      <div id="logo">
-      </div>
       <script>
 var article = document.getElementsByTagName('article')[0];
 article.style.opacity = 0;
@@ -50,7 +47,6 @@ function fadeIn(element, intervalDelta, callback) {
   }, intervalDelta);
 };
       </script>
-      <!--[endif]-->
       <hgroup>
       <h1 class='lateFader'>Milan Oberkirch</h1>
       <h2 class='lateFader'>Developer &amp; Linux Enthusiast</h2>
@@ -67,16 +63,17 @@ function fadeIn(element, intervalDelta, callback) {
         href="http://www.xing.com/profile/Milan_Oberkirch">XING</a>
       or via email at
       <a id="email-address" class="contact"
-        href="mailto:zvynar@gmail.com">zvynar@gmail.com</a>.
+        href="mailto:zvynar@gmail.com">zvynar@gmail.com</a>.<br/>
+      <small>
+      <a href="Impressum">Impressum</a>.
+      </small>
       </p>
-      <!--[if !IE]> -->
       <script>
 var lateFader = document.getElementsByClassName('lateFader');
 for (var i = 0; i < lateFader.length; ++i) {
   lateFader[i].style.opacity = 0;
 }
       </script>
-      <!--[endif]-->
     </article>
     </body>
 
