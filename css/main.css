@@ -121,6 +121,12 @@ body {
   text-rendering: optimizeLegibility;
 }
 
+#github-riddon {
+  position: absolute;
+  top: 0; right: 0;
+  border: 0;
+}
+
 #main-content {
   position: absolute;
   top: 0;
@@ -128,16 +134,11 @@ body {
   bottom: 0;
   right: 0;
   margin: auto;
-  height: 50%;
+  height: 66%;
 }
 
 .js > body > #main-content {
   display: none;
-}
-
-
-h1,h2,h3 {
-  font-weight: normal;
 }
 
 hgroup > h1 {
