@@ -1,6 +1,8 @@
 Files with personal data
 ========================
 
+Copyright (c) Milan Oberkirch
+
 All files containing photos or address-data are under Copyright by Milan
 Oberkirch. You may NOT publish them elsewhere (it is okay to fork this repo and
 delete/exchange them as soon as possible). Currently this applies to the following
