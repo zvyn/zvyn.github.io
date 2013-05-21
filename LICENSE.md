@@ -1,4 +1,25 @@
-Copyright (c) HTML5 Boilerplate
+Files with personal data
+========================
+
+All files containing photos or address-data are under Copyright by Milan
+Oberkirch. You may NOT publish them elsewhere (it is okay to fork this repo and
+delete/exchange them as soon as possible). Currently this applies to the following
+files or folders (and their contents):
+# apple-touch-icon-114x114-precomposed.png
+# apple-touch-icon-144x144-precomposed.png
+# apple-touch-icon-57x57-precomposed.png
+# apple-touch-icon-72x72-precomposed.png
+# apple-touch-icon-precomposed.png
+# apple-touch-icon.png
+# apple-touch-icon.xcf
+# favicon.ico
+# \_includes
+You are NOT permitted to publish them without my written permission.
+
+For everything else
+===================
+
+Copyright (c) HTML5 Boilerplate and Milan Oberkirch
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
