@@ -14,6 +14,7 @@ files or folders (and their contents):
 * apple-touch-icon.xcf
 * favicon.ico
 * \_includes
+
 You are NOT permitted to publish them without my written permission.
 
 For everything else
