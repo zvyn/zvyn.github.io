@@ -141,7 +141,7 @@ body {
   display: none;
 }
 
-hgroup > h1 {
+.hgroup > h1 {
   font-weight: 300;
   font-family: Ubuntu, Helvetica, Arial, sans-serif;  
 }
