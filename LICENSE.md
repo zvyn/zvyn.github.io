@@ -22,7 +22,7 @@ You are NOT permitted to publish them without my written permission.
 For everything else
 ===================
 
-Copyright (c) HTML5 Boilerplate and Milan Oberkirch
+Copyright (c) HTML5 Boilerplate or Milan Oberkirch
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
