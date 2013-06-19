@@ -17,4 +17,7 @@ function loadToMainDiv(href, title) {
 $(document).ready(function(){
   setLinks();
   $("#main-content").fadeIn("slow");
+  if ("vibrate" in navigator) {
+    navigator.vibrate(200);
+  }
 })
