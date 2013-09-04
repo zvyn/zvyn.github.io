@@ -1,6 +1,6 @@
 function setLinks() {
-  $(".link-impressum").attr('href', 'javascript: loadToMainDiv("impressum.html", "Impressum")');
-  $(".link-home").attr('href', 'javascript: loadToMainDiv("home.html", "Milan Oberkirch");');
+  $(".link-impressum").attr('href', 'javascript: loadToMainDiv("impressum", "Impressum")');
+  $(".link-home").attr('href', 'javascript: loadToMainDiv("home", "Milan Oberkirch");');
 }
 
 function loadToMainDiv(href, title) {

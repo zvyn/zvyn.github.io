@@ -1,6 +1,5 @@
 ---
-layout: default
-title: impressum
+layout: part
 ---
 
 {% include impressum.html %}
