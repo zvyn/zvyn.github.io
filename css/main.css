@@ -100,6 +100,14 @@ textarea {
   src: local('Ubuntu'), url(fonts/Ubuntu-Light.woff) format('woff'), url(fonts/Ubuntu-Light.ttf) format('truetype'), url(fonts/Ubuntu-Light.svg) format('svg');
 }
 
+.autogram {
+  margin-left: auto;
+  margin-right: auto;
+  width: 10em;
+  max-width: 63%;
+  max-height: 3em;
+}
+
 #logo {
   border-left: solid #08c 0.8em;
   width: 1em;
