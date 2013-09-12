@@ -1,7 +1,7 @@
-zvynar.github.io
+zvyn.github.io
 ================
 
-This is the source for my github-page at zvynar.github.io.
+This is the source for my github-page at zvyn.github.io, also available via oberkirch.org.
 
 references
 ----------
