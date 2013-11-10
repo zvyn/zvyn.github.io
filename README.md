@@ -9,7 +9,7 @@ references
 I make use of
 
 * [bootstrap](http://getbootstrap.com) for fast and easy design. Includes
-  (GLYPHICONS)[http://glyphicons.com/] from Jan Kovařík.
+  [GLYPHICONS](http://glyphicons.com/) from Jan Kovařík.
 * [jQuery](https://github.com/jquery/jquery) as a dependency to the
   bootstrap dropdown-menu.
 * [html5shiv](https://github.com/aFarkas/html5shiv) for HTML5-support in IEs.
