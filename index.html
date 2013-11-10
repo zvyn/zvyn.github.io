@@ -79,13 +79,15 @@
             <h5>Angaben gemäß §5 TMG:</h5>
             <h6>[German law demands this]</h6>
             </hgroup>
-            <p>
+            <address>
             Milan Oberkirch<br>
             Händelstr. 20<br>
             79104 Freiburg
-            </p><p>
+            </address>
+            <p>
             Tel.: 004915127118138<br>
-            Mail: abuse@oberkirch.org</p>
+            Mail: abuse@oberkirch.org
+            </p>
         </div>
       </footer>
     </div> <!-- /container -->
@@ -99,8 +101,14 @@
                 toggle: 'popover',
                 placement: 'bottom',
                 html: true,
+                title: '<a href="https://en.wikipedia.org/wiki/Impressum">What is that?</a><a href="#" id="impressum_close" class="btn btn-default glyphicon glyphicon-remove"> </a>',
                 content: content_object.innerHTML,
-                })[0];
+                });
+            popover.on('shown.bs.popover', function() {
+                close_button = $("#impressum_close")[0];
+                close_button.onclick = function(){ popover.popover('hide'); };
+            });
+            return popover;
         }
         initialize_impressum();
     </script>
