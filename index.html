@@ -72,8 +72,8 @@
         </div>
       </div>
       <footer>
-          <p>&copy; Milan Oberkirch 2013,
-          <a id="impressum_link" title="" href="#">Impressum</a></p>
+        <p>&copy; Milan Oberkirch 2013,
+        <a id="impressum_link" title="" href="#">Impressum</a></p>
         <div id="impressum_content">
             <hgroup>
             <h5>Angaben gemäß §5 TMG:</h5>
@@ -94,23 +94,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-    <script>
-        function initialize_impressum() {
-            content_object = $('#impressum_content').hide()[0];
-            popover = $('#impressum_link').popover({
-                toggle: 'popover',
-                placement: 'bottom',
-                html: true,
-                title: '<a href="https://en.wikipedia.org/wiki/Impressum">What is that?</a><a href="#" id="impressum_close" class="btn btn-default glyphicon glyphicon-remove"> </a>',
-                content: content_object.innerHTML,
-                });
-            popover.on('shown.bs.popover', function() {
-                close_button = $("#impressum_close")[0];
-                close_button.onclick = function(){ popover.popover('hide'); };
-            });
-            return popover;
-        }
-        initialize_impressum();
-    </script>
+    <script src="/js/impressum.js"></script>
     </body>
     </html>
