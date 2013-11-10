@@ -9,10 +9,10 @@
             toggle: 'popover',
             placement: 'bottom',
             html: true,
-            title: '<a href="https://en.wikipedia.org/wiki/Impressum">What is that?</a><a href="#" id="impressum_close" class="btn btn-default glyphicon glyphicon-remove"> </a>',
+            title: 'Impressum <a href="#" id="impressum_close" ' +
+                   'class="btn btn-default glyphicon glyphicon-remove"> </a>',
             content: content_object.innerHTML,
         }).on('shown.bs.popover', function() {
-            console.log(this)
             $("#impressum_close").on('click', function(){
                 popover.popover('hide')
             })
