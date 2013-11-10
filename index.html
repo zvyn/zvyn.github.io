@@ -45,7 +45,7 @@
         </p>
         <div class="dropdown">
           <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-            Get in touch
+            Get in touch<noscript> (only works with JavaScript enabled)</noscript>
             <span class="caret"></span>
           </button>
           <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
@@ -72,11 +72,38 @@
         </div>
       </div>
       <footer>
-        <p>&copy; Milan Oberkirch 2013</p>
+          <p>&copy; Milan Oberkirch 2013,
+          <a id="impressum_link" title="" href="#">Impressum</a></p>
+        <div id="impressum_content">
+            <hgroup>
+            <h5>Angaben gemäß §5 TMG:</h5>
+            <h6>[German law demands this]</h6>
+            </hgroup>
+            <p>
+            Milan Oberkirch<br>
+            Händelstr. 20<br>
+            79104 Freiburg
+            </p><p>
+            Tel.: 004915127118138<br>
+            Mail: abuse@oberkirch.org</p>
+        </div>
       </footer>
     </div> <!-- /container -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="/js/jquery.min.js"></script>
     <script src="/js/bootstrap.min.js"></script>
-  </body>
-</html>
+    <script>
+        function initialize_impressum() {
+            content_object = $('#impressum_content')[0];
+            content_object.hidden = true;
+            popover = $('#impressum_link').popover({
+                toggle: 'popover',
+                placement: 'bottom',
+                html: true,
+                content: content_object.innerHTML,
+                })[0];
+        }
+        initialize_impressum();
+    </script>
+    </body>
+    </html>
