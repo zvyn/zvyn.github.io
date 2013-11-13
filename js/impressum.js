@@ -3,7 +3,7 @@
     // POPOVER FOR IMPRESSUM-LINK
     // ==========================
 
-    $(window).on('load', function () {
+    $(function () {
         var content_object = $('#impressum_content').hide()[0]
         var popover = $('#impressum_link').popover({
             toggle: 'popover',
@@ -15,6 +15,7 @@
         }).on('shown.bs.popover', function() {
             $("#impressum_close").on('click', function(){
                 popover.popover('hide')
+                console.log("hans\n")
             })
         })
     })
