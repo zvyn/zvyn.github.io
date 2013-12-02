@@ -31,8 +31,10 @@
                                    <link rel="shortcut icon" href="/ico/favicon.png">
   </head>
   <body lang="en-US">
+    <div id=overlay hidden style="position: fixed; top: 0; left: 0; bottom: 0;
+        right: 0; background-color: #225078; z-index: 1"></div>
     <script>
-        document.body.hidden = true;
+       document.getElementById('overlay').hidden = false;
     </script>
     <div class="container">
       <div class="jumbotron">
