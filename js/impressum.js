@@ -4,7 +4,7 @@
     // ==========================
 
     $(function () {
-        var content_object = $('#impressum_content').toggle('slow');
+        var content_object = $('#impressum_content').hide();
         $('#impressum_link').on('click', function(){
             content_object.toggle('slow');
         });
