@@ -1,28 +1,9 @@
 body {
     background-attachment: fixed;
-    background-color: #225078;
-    padding-left: 15px;
-    padding-right: 15px;
     color: #fff;
-    font-family: "Open Sans", Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
-.jumbotron {
-    background: none;
-    z-index: 2;
-    position: relative;
-    font-weight: 300;
-}
-
-hgroup>h1, hgroup>h2 {
-    font-family: "Open Sans", Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-
-hgroup>h1 {
-    font-weight: 600;
-}
-
-hgroup>h2 {
+.jumbotron, hgroup>h2 {
     font-weight: 300;
 }
 
