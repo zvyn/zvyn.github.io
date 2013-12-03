@@ -13,7 +13,7 @@
     <meta name="msapplication-TileImage" content="/ico/ms-touch-icon.png"/>
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,400' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
     <link href="/css/bootstrap.min.css" rel="stylesheet">
     <link href="/css/bootstrap-theme.min.css" rel="stylesheet">
     <link href="/css/custom.css" rel="stylesheet">
@@ -38,62 +38,51 @@
     </script>
     <div class="container">
       <div class="jumbotron">
+        <hgroup>
         <h1>Milan Oberkirch</h1>
-        <p>
-        Software engineer, developer, system admin and linux expert.
+        <h2>
+            Software engineer, developer, system admin and linux expert.
+        </h2>
+        </hgroup>
+        <p class=contact>
+        Get in touch:
+        <ul class=contact>
+            <li class="mail"><a href="mailto:web@oberkirch.org">
+                E-Mail
+            </a></li>
+            <li class="github"><a href="http://github.com/zvyn">
+                Github
+            </a></li>
+            <li class="google_plus">
+            <a href="http://google.com/+MilanOberkirch?rel=author">
+                Google+
+            </a></li>
+            <li class="linkedin">
+            <a href="http://www.linkedin.com/in/milanoberkirch">
+                LinkedIn
+            </a></li>
+        </ul>
         </p>
-        <div class="dropdown">
-          <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown">
-            Get in touch<noscript> (only works with JavaScript enabled)</noscript>
-            <span class="caret"></span>
-          </button>
-          <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-            <li role="presentation"><a role="menuitem" tabindex="-1"
-                href="mailto:web@oberkirch.org">
-                <img alt="@" src="data:image/png;base64,
-                iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA/JpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ1dWlkOjY1RTYzOTA2ODZDRjExREJBNkUyRDg4N0NFQUNCNDA3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkZFM0NEMjlDREIxNDExRTI5OUM3RjkzMzA0MzZGNDcwIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkZFM0NEMjlCREIxNDExRTI5OUM3RjkzMzA0MzZGNDcwIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2Zjc5YzE4Yy02NmMwLTQ5OWItOTc2Yy04MWVhNmRhNGUwMjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MzQzRTBDQzgwNzIwNjgxMTgwODM4NkU1NzNGNzFDMzYiLz4gPGRjOnRpdGxlPiA8cmRmOkFsdD4gPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5nbHlwaGljb25zPC9yZGY6bGk+IDwvcmRmOkFsdD4gPC9kYzp0aXRsZT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7AZrdPAAABMklEQVR42tRWCw2DMBBtMTAcbA6Gg1UCEpCABCQgAQmbg81B56ASmILuurxLLk1ZgYyEXfJCP3f3esddQSmlDGEk+B8j+DQag4PaRl4abJvJrgieSCdLNTe1uRfVEUrvvYpB0hBcxsfkhiWcgnNCS7iLagt7A6IoMV9E4GBYRSe8J3Qb6I5LCExkZDlNWO8xrqFTIpWzCCyMBxkN1lrej3QMMIuAT8enb4Rz1jlhzeUIikRVcSl+SpAcDZjXXK605rTW4f0chU2ZKtEi2yhas+EFz2tE+CBCK+bZPhgQvk2kqBX5Dw47jM2SMuVwG1FBBo4qRBATjUv7oI+qxCecOMCuIZCpqSc61Qqd6xqCTyRRgxlOl8j9t2vCz71Nb3DEwmTnv/oe7Jdg04++2vq35S3AAGVhX2TKPy6WAAAAAElFTkSuQmCC
-                "/> E-Mail</a>
-            </li>
-            <li role="presentation"><a role="menuitem" tabindex="-1"
-                href="http://github.com/zvyn">
-                <img alt="g" src="data:image/png;base64,
-                iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA/JpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ1dWlkOjY1RTYzOTA2ODZDRjExREJBNkUyRDg4N0NFQUNCNDA3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkQ1NTREOUJFREIxNDExRTI5OUM3RjkzMzA0MzZGNDcwIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkQwRUM5ODA4REIxNDExRTI5OUM3RjkzMzA0MzZGNDcwIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2Zjc5YzE4Yy02NmMwLTQ5OWItOTc2Yy04MWVhNmRhNGUwMjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MzQzRTBDQzgwNzIwNjgxMTgwODM4NkU1NzNGNzFDMzYiLz4gPGRjOnRpdGxlPiA8cmRmOkFsdD4gPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5nbHlwaGljb25zPC9yZGY6bGk+IDwvcmRmOkFsdD4gPC9kYzp0aXRsZT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz5XSIMHAAAAvklEQVR42mJgYGAIAOIPQPyfyhhkZgAjlMHPQBvwkRFqG80AEwONwYBZkAjED0kw5yFUD1aAkQKAAESA5BKA+AGelAKSS0BSj6EGayQDFTOSExyMjIz/B0UcPKTAvIPExAE8TEnF0FIBxTxsPnhAgQ8+EPQBkmsaSCh3GqB6BLDIYQgYICvElQTRxaFsB2KCyICCIFIgJpIfkOMDqJ4HxAQRCC8gkMOJ1jNaXI8QCz7S0PyPsNxHq2aLA0CAAQDnhQMbm3hE3wAAAABJRU5ErkJggg==
-                "/> Github</a>
-            </li>
-            <li role="presentation"><a role="menuitem" tabindex="-1"
-                href="http://google.com/+MilanOberkirch?rel=author">
-                <img alt="g+" src="data:image/png;base64,
-                iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA/JpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ1dWlkOjY1RTYzOTA2ODZDRjExREJBNkUyRDg4N0NFQUNCNDA3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkFDRjVDNjQxREIxNDExRTI5OUM3RjkzMzA0MzZGNDcwIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkFDRjVDNjQwREIxNDExRTI5OUM3RjkzMzA0MzZGNDcwIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2Zjc5YzE4Yy02NmMwLTQ5OWItOTc2Yy04MWVhNmRhNGUwMjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MzQzRTBDQzgwNzIwNjgxMTgwODM4NkU1NzNGNzFDMzYiLz4gPGRjOnRpdGxlPiA8cmRmOkFsdD4gPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5nbHlwaGljb25zPC9yZGY6bGk+IDwvcmRmOkFsdD4gPC9kYzp0aXRsZT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4PtV/kAAABHUlEQVR42tSW7Q3CIBCGwQXsCIzgCB2BERihIzgCG8gIHQE3cARGaCdAIEdyEsqX9odNXlM5es/R+1BCCJmdNif7Y3mfM4WbKznn2inQTrv+H0CSxCgnAYmfrLXEy9/DujlKKuzL2cLHy4mBIw2OBALcSs5rABOjBRA2cgThowAcaWo00VZwUAWwioNbzo7BRwp7GyKcvz0BjlBlNjCwiVHAPSlHnOgVrW+jAJskOta8gO+sVqItgBCt04Lf+UHp9iq7iLt4OQOgklOoUUAcdjuMCA2vxDvWH1ORUp+Xx8iwk2hUcIg2wmTSiGv3KdDDsrARV1Q/oOHBraWbSwDZUucjgAvkwVTy9IRE894f/ZZS1NDdU2fThb8tbwEGAKtAIGhF7cChAAAAAElFTkSuQmCC
-                "/> Google+</a>
-            </li>
-            <li role="presentation"><a role="menuitem" tabindex="-1"
-                href="http://www.linkedin.com/in/milanoberkirch">
-                <img alt="li" src="data:image/png;base64,
-                iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA/JpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuNS1jMDE0IDc5LjE1MTQ4MSwgMjAxMy8wMy8xMy0xMjowOToxNSAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtbG5zOmRjPSJodHRwOi8vcHVybC5vcmcvZGMvZWxlbWVudHMvMS4xLyIgeG1wTU06T3JpZ2luYWxEb2N1bWVudElEPSJ1dWlkOjY1RTYzOTA2ODZDRjExREJBNkUyRDg4N0NFQUNCNDA3IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkZFM0NEMjlDREIxNDExRTI5OUM3RjkzMzA0MzZGNDcwIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkZFM0NEMjlCREIxNDExRTI5OUM3RjkzMzA0MzZGNDcwIiB4bXA6Q3JlYXRvclRvb2w9IkFkb2JlIFBob3Rvc2hvcCBDUzYgKE1hY2ludG9zaCkiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo2Zjc5YzE4Yy02NmMwLTQ5OWItOTc2Yy04MWVhNmRhNGUwMjkiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MzQzRTBDQzgwNzIwNjgxMTgwODM4NkU1NzNGNzFDMzYiLz4gPGRjOnRpdGxlPiA8cmRmOkFsdD4gPHJkZjpsaSB4bWw6bGFuZz0ieC1kZWZhdWx0Ij5nbHlwaGljb25zPC9yZGY6bGk+IDwvcmRmOkFsdD4gPC9kYzp0aXRsZT4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7AZrdPAAABMklEQVR42tRWCw2DMBBtMTAcbA6Gg1UCEpCABCQgAQmbg81B56ASmILuurxLLk1ZgYyEXfJCP3f3esddQSmlDGEk+B8j+DQag4PaRl4abJvJrgieSCdLNTe1uRfVEUrvvYpB0hBcxsfkhiWcgnNCS7iLagt7A6IoMV9E4GBYRSe8J3Qb6I5LCExkZDlNWO8xrqFTIpWzCCyMBxkN1lrej3QMMIuAT8enb4Rz1jlhzeUIikRVcSl+SpAcDZjXXK605rTW4f0chU2ZKtEi2yhas+EFz2tE+CBCK+bZPhgQvk2kqBX5Dw47jM2SMuVwG1FBBo4qRBATjUv7oI+qxCecOMCuIZCpqSc61Qqd6xqCTyRRgxlOl8j9t2vCz71Nb3DEwmTnv/oe7Jdg04++2vq35S3AAGVhX2TKPy6WAAAAAElFTkSuQmCC
-                "> LinkedIn</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <footer>
-          <p>&copy; CC-BY-SA 3.0 Milan Oberkirch 2013 <br>
+    </div>
+    <footer>
+        <p>&copy; CC-BY-SA 3.0 Milan Oberkirch 2013.
         <a id="impressum_link" title="" href="#">Impressum</a></p>
         <div id="impressum_content">
             <address>
-            Milan Oberkirch<br>
-            Händelstr. 20<br>
-            79104 Freiburg
+                Milan Oberkirch<br>
+                Händelstr. 20<br>
+                79104 Freiburg
             </address>
             <address>
-            Phone: +49 151 271 181 38<br>
-            E-Mail: mail@oberkirch.org
+                Phone: +49 151 271 181 38<br>
+                E-Mail: mail@oberkirch.org
             </address>
         </div>
-      </footer>
-    </div> <!-- /container -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="/js/jquery.min.js"></script>
-    <script src="/js/bootstrap.min.js"></script>
-    <script src="/js/impressum.js"></script>
-  </body>
+    </footer>
+</div> <!-- /container -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+<script src="/js/impressum.js"></script>
+</body>
 </html>
