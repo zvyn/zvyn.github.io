@@ -78,31 +78,6 @@ Validate this:
           Phone: +49 151 271 181 38,
           E-Mail: spam@oberkirch.org
       </footer>
-      <script>
-        debounce = function (eventFunction, thresholdInMilliseconds) {
-            // Prevents functions from triggering to often.
-            // See https://github.com/thaibault/jQuery-tools/blob/master/jquery-tools-1.0.coffee#L551
-            var timeoutID = null;
-            return function () {
-                if (timeoutID != null) {
-                    window.clearTimeout(timeoutID);
-                    timeoutID = setTimeout(
-                        eventFunction, thresholdInMilliseconds);
-                    return timeoutID;
-                } else {
-                    var result = eventFunction();
-                    timeoutID = setTimeout(function () {},
-                            thresholdInMilliseconds);
-                    return result;
-                }
-            };
-        };
-        window.onload = function () {
-            document.body.style.height = window.innerHeight.toString() + "px";
-            document.body.style.width = window.innerWidth.toString() + "px";
-        };
-        window.onresize = debounce(window.onload, 5);
-      </script>
 </div>
 </body>
 </html>
