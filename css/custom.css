@@ -1,5 +1,5 @@
 body {
-    background: white;
+    background: #eee;
     overflow-x: hidden;
 }
 
@@ -14,6 +14,9 @@ body {
 @media screen and (min-width: 768px) {
     .container {
         padding-top: 2em;
+    }
+    .jumbotron {
+        background: white;
     }
     footer {
         position: fixed;
