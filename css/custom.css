@@ -32,12 +32,13 @@ footer {
     text-align: center;
 }
 
+
 .contact {
     font-size: 24px;
     line-height: 1.5;
 }
 
-.contact > ul > li > a {
+.contact > ul > li > a, a.pgp {
     color: inherit;
 }
 
@@ -45,6 +46,11 @@ footer {
 
 li.mail {
     list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABJUlEQVQ4y6XTvyvEcRgH8JdOLChxGRjEIFf+B2alZDAYlFk2M4abDP4DJZssrizSMV6yXJcMSsnkH3Ancpbnrm/f+35LPPXUp/fn/bw/z68PvVZCGXW0wuuBleRYHwqooIl2jjeDU4iYrhVQzQl4z8CrEdO1SopwjQUUMY4pnKQ4lWTNybT3MY2zxOsNLGIvlV1JNKcDHmIGn6iF0CpWcIR5XCX4ZdHhjmIRj3iJ7HajXpHFNrYSAnUxpjbeMBDnpXi9hQsMBr6JnYRAqz9nrCMYwleUtYZXXOI2Te6U8I05nOIBY9H9gxAcxnlqEvV0E+8xirsU8SOwRgovZ42xhgnMYgPrmMQynrPGmLVIbdzgOBboKeO+8ptVzvOeVf73Z/rzd/4BRk6W5vdKe8oAAAAASUVORK5CYII=");
+}
+li.mail > ul {
+    display: none;
+}
+li.mail:hover > ul {
 }
 li.phone {
     list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+UlEQVQ4y53TvUrEUBCG4Wd3RcTa2t5Ull6BjZcgFoK13oBtQBBr72P9ARVWLe1MZ+8lWGz8wdhMlkNMTHBgijnnzMt8Z2b4bRlyFCjDizjLdNgIE9yg+sPnmMbbUQqYYIZjHOKzBzSLnIXd4iiJL3oAVVSy0FxhrSGrGiAnG2M3EvaS5FP9tlLnFkF8whjreBtQQRW5ygjesRH07YGAMgVUeMZyQA6GAorG4XWic3+IhLzl4gxLAdnBKzYjPsdHvMvrNs5bIPeJnNVGB07wlY72tKPEl/jQcaN9j7hsG+U2yHeAcmzhDg/NUa6XadohJ/WrtmX69zr/AEd8lU5MwcO3AAAAAElFTkSuQmCC");
@@ -70,8 +76,8 @@ li.phone:hover>a:after {
 li.mail:hover>a:after {
     content: ": mail@oberkirch.org";
 }
-li.mail:hover>a.pgp:after {
-    content: "";
+li.pgp:hover>a:after {
+    content: " from keyserver.pgp.com";
 }
 li.github:hover>a:after {
     content: ": /zvyn";
