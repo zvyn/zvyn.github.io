@@ -2,15 +2,14 @@ body {
     overflow-x: hidden;
 }
 
-.jumbotron, .hgroup>h2 {
-    font-weight: 300;
-}
-.jumbotron:hover > .hgroup {
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.1);
+.jumbotron {
+    background-color: white;
 }
 
-li.google_plus>a:after {
-    content: '+';
+.jumbotron, .hgroup>h1, .hgroup>h1>small {
+    line-height: 0.8;
+    font-weight: 300;
+    font-family: "Open Sans", Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 @media screen and (min-width: 768px) {
@@ -20,71 +19,15 @@ li.google_plus>a:after {
     .jumbotron {
         box-shadow: 0 0 2em -1em;
     }
-    footer {
-        position: fixed;
-        bottom: 0;
-        right: 0;
-    }
 }
 
 footer {
-    font-size: 12px;
+    font-size: 10px;
     text-align: center;
 }
 
-
 .contact {
+    margin-top: 1em;
     font-size: 24px;
     line-height: 1.5;
-}
-
-.contact > ul > li > a, a.pgp {
-    color: inherit;
-}
-
-/* for i in *_black.png; do echo "$i:"; base64 -w0 $i; echo; done */
-
-li.mail {
-    list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABJUlEQVQ4y6XTvyvEcRgH8JdOLChxGRjEIFf+B2alZDAYlFk2M4abDP4DJZssrizSMV6yXJcMSsnkH3Ancpbnrm/f+35LPPXUp/fn/bw/z68PvVZCGXW0wuuBleRYHwqooIl2jjeDU4iYrhVQzQl4z8CrEdO1SopwjQUUMY4pnKQ4lWTNybT3MY2zxOsNLGIvlV1JNKcDHmIGn6iF0CpWcIR5XCX4ZdHhjmIRj3iJ7HajXpHFNrYSAnUxpjbeMBDnpXi9hQsMBr6JnYRAqz9nrCMYwleUtYZXXOI2Te6U8I05nOIBY9H9gxAcxnlqEvV0E+8xirsU8SOwRgovZ42xhgnMYgPrmMQynrPGmLVIbdzgOBboKeO+8ptVzvOeVf73Z/rzd/4BRk6W5vdKe8oAAAAASUVORK5CYII=");
-}
-li.mail > ul {
-    display: none;
-}
-li.mail:hover > ul {
-}
-li.phone {
-    list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+UlEQVQ4y53TvUrEUBCG4Wd3RcTa2t5Ull6BjZcgFoK13oBtQBBr72P9ARVWLe1MZ+8lWGz8wdhMlkNMTHBgijnnzMt8Z2b4bRlyFCjDizjLdNgIE9yg+sPnmMbbUQqYYIZjHOKzBzSLnIXd4iiJL3oAVVSy0FxhrSGrGiAnG2M3EvaS5FP9tlLnFkF8whjreBtQQRW5ygjesRH07YGAMgVUeMZyQA6GAorG4XWic3+IhLzl4gxLAdnBKzYjPsdHvMvrNs5bIPeJnNVGB07wlY72tKPEl/jQcaN9j7hsG+U2yHeAcmzhDg/NUa6XadohJ/WrtmX69zr/AEd8lU5MwcO3AAAAAElFTkSuQmCC");
-}
-li.github {
-    list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA9UlEQVQ4y63TPU7DQBAF4A8cUASHQNAguUguQMsp6LkJd0Acw0qdMg1K4SoFP3VERQpwOtPMWisjQ/h50mjXM++Nd2Zn+YwSN6ixDavDVxrAHgpUaNAOWBOcIjQdCsy/EPZtHpoOVQRudxAnTpXXnI49Dd8dlrgPW4ZPcFI55QhXGEfwINZrwziMdRxadWTc4tz3OMEmNLUQtnjE8Q4JjvCQfrqfBV7xhgVesM4atw7fAu/B65BKeIq6UjOnWYL8G55TCSPMMMEZLoIwiUFZ9ToPlziN/ax/jZvendfZCdsep8lHu/rBFLb9QfqXUf7zY/r1c/4AJBOKjM6HTZwAAAAASUVORK5CYII=");
-}
-
-li.google_plus {
-    list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAABIklEQVQ4y43Tv0pDYQwF8J9WwVlwENEWa5euHTqLi4NgN3HtYB9CXIQOFZ/BzV36ACKio2KLi05ubq6tFP8sable760GwhdCziFfcsJvq6KNHobhvchV5dgMCuhigK8cH0RNITATK+BqCjDtl4GZ2C0u0EQdNWzjLgO8G293DC6ihEa0eBD5HYwyCNYT36lCJQDjghHKkbvPINhIxJ1ZvKYGOofNiD/ibQRpBS9BUsQKLEfRU4J5H/N4zuignIjf4SgISkHSx1LMImsDq4l4CA84wxYWsYDOlBX2E3FPKGycaEY3dXz+Qw/tsXR7OMZeYpg1vP2hyh/SPgmiR7RiG60pBN30PVynCs5T+pgq5axjuskgyD2m9DkfYg2nIabcc/4GQF2TkSf94J4AAAAASUVORK5CYII=");
-}
-li.linkedin {
-    list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAACXBIWXMAAAsTAAALEwEAmpwYAAAA7UlEQVQ4y6XTsUoDQRAG4M89sBHEzsLeYArzEr6I+Cz3IBbpJaQyYK2VXCOmsbMSxC4plLOZDWtivFN/+GF3/plh999ZNjFEjQbLYBOxoS3YQYUJFmi3cBE5VdSsUOEmEh7x/kOTNnKrssEkhLMQrjsatFGzunM+9gUOcd+jwSJ7Uq8JHz2KM2vhcA4cx6lug3CE81gf4K7IbxIGhRf7hanZpGe8hvaGyyJ/kHTjFFfhPDyVYsK8o8Hu2v6lWM8TpvqhLYYuY5owjnH9LZYYJzxgFsETjLAXHEXMN/tZ1H4Z5b7vvzHK//5Mf/7On1sZdbLxSa8cAAAAAElFTkSuQmCC");
-}
-/* Show my nicks. */
-
-li:hover>a:after{
-    color: grey;
-}
-li.phone:hover>a:after {
-    content: ": +49 151 2711 8138";
-}
-li.mail:hover>a:after {
-    content: ": mail@oberkirch.org";
-}
-li.pgp:hover>a:after {
-    content: " from keyserver.pgp.com";
-}
-li.github:hover>a:after {
-    content: ": /zvyn";
-}
-li.google_plus:hover>a:after {
-    content: ": +Milan Oberkirch";
-}
-li.linkedin:hover>a:after {
-    content: ": /in/milanoberkirch";
 }

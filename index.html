@@ -18,9 +18,9 @@ Validate this:
     <meta name="msapplication-TileColor" content="#0088cc"/> 
     <meta name="msapplication-TileImage" content="/ico/ms-touch-icon.png"/>
 
-    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600' rel='stylesheet' type='text/css'>
-    <link href="/css/bootstrap.min.css" rel="stylesheet">
-    <link href="/css/custom.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/css/custom.css">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -36,41 +36,48 @@ Validate this:
   </head>
   <body lang="en-US">
   <div class="container">
+      <div class="row">
+          <div class="col-xs-12 col-xs-offset-0 col-md-10 col-md-offset-1
+              col-lg-10
+          col-lg-offset-1">
       <div class="jumbotron">
           <div class="hgroup">
-              <h1>Milan Oberkirch</h1>
-              <h2>
-                  Software engineer, developer, system admin, and linux expert.
-              </h2>
+              <h1>Milan Oberkirch
+                  <small><br/>
+                      Software engineer, developer,<br/> system admin, and linux expert.
+              </small></h1>
           </div>
           <div class="contact">
               Get in touch:
-              <ul>
-                  <li class="mail">
+              <dl class=dl-horizontal>
+                  <dt class="mail">
                     <a
                         href="mailto:&#109;&#97;&#105;&#108;&#64;oberkirch&#46;org">E-Mail</a>
-                        <ul><li class=pgp>
-                            <a class="pgp"
-                                href="https://keyserver.pgp.com/vkd/DownloadKey.event?keyid=0x66189C478186E391">PGP-Key</a>
-                        </li></ul>
-                  </li>
-                  <li class="phone">
+                    </dt><dd><span id="obscurity">mail at oberkirch dot org</span>
+                                <small><a class="pgp"
+                                href="https://keyserver.pgp.com/vkd/DownloadKey.event?keyid=0x66189C478186E391">
+                                (PGP)</a></small>
+                  <dt class="phone">
                     <a href="tel:&#48;&#48;&#52;&#57;&#49;&#53;&#49;&#50;&#55;&#49;&#49;&#56;&#49;&#51;&#56;">Phone</a>
-                  </li>
-                  <li class="github">
+                  </dt>
+                  <dd>+49 151 2711 8138</dd>
+                  <dt class="github">
                     <a href="http://github.com/zvyn">Github</a>
-                  </li>
-                  <li class="google_plus">
+                    </dt><dd>github.com/zvyn</dd>
+                  <dt class="google_plus">
                     <a href="http://google.com/+MilanOberkirch?rel=author">Google</a>
-                  </li>
-                  <li class="linkedin">
+                    </dt><dd>+Milan Oberkirch</dd>
+                  <dt class="linkedin">
                     <a href="http://www.linkedin.com/in/milanoberkirch">LinkedIn</a>
-                  </li>
-              </ul>
+                    </dt><dd>/in/milanoberkirch</dd>
+              </dl>
           </div>
       </div>
-      <footer>
-          &copy; CC-BY-SA 2013 Milan Oberkirch.
+      </div>
+      </div>
+      <div class=row>
+      <footer class="text-muted">
+          &copy; CC-BY-SA 2013-2014 Milan Oberkirch.
           Impressum:
           Milan Oberkirch,
           Händelstr. 20,
@@ -78,18 +85,19 @@ Validate this:
           Phone: +49 151 271 181 38,
           E-Mail: spam@oberkirch.org
       </footer>
-      <!--[if !(lt IE 8)]><!-->
-   <script type="text/javascript">
-    var tdwfb_config = {
-      startAsMinimized: true,
-      greeting: 'Dear Internet', // Sets the salutation shown in the banner.
-      disableDate: false, // If true, the banner shows even if the date is not yet 02/11/2014. Use for testing.
-      callOnly: true
-    };
-    (function(){var e=document.createElement("script");e.type="text/javascript";e.async=true;e.src=document.location.protocol+"//d1agz031tafz8n.cloudfront.net/thedaywefightback.js/widget.min.js";var t=document.getElementsByTagName("script")[0];t.parentNode.insertBefore(e,t)})()
-   </script>
-<!--<![endif]-->
-
+      </div>
+    <script>
+(function(){
+ var a = '.'
+ var b = '@'
+ var c = 'org'
+ var d = 'mail'
+ a += c
+ b += 'oberkirch'
+ d += b + a
+ document.getElementById('obscurity').innerText = d
+ })()
+</script>
 </div>
 </body>
 </html>
