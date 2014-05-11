@@ -24,8 +24,8 @@ body {
 .container-fluid .jumbotron {
     padding-top: 15px;
     transition-duration: 1s;
-    border-radius: 0px;
     background-color: white;
+    box-shadow: white 0 0 1em;
 }
 
 .jumbotron, .hgroup>h1, .hgroup>h1>small, h1 {
@@ -39,7 +39,6 @@ body {
         padding-top: 2em;
     }
     .container-fluid .jumbotron {
-    background-color: transparent;
     }
 }
 
@@ -50,6 +49,6 @@ footer {
 
 .contact {
     margin-top: 1em;
-    font-size: 120%;
+    font-size: 150%;
     line-height: 1.5;
 }
