@@ -4,17 +4,31 @@ html {
 }
 
 body {
+    text-shadow: white 0 0 5px;
     overflow-x: hidden;
     background-color: transparent;
+}
+
+
+.contact > dl > dt > a, footer, h1, h2 {
+    text-shadow: none;
+}
+
+.page {
+    margin: 0;
+    padding: 0;
+    position:relative;
+    min-height: 100%;
+    width: 100%;
+    overflow-x: auto;
 }
 
 .page-1 {
 }
 .page-2 {
-    border-top: solid black;
 }
 
-.container, .container-fluid, body, html, .page {
+.container, .container-fluid, body, html {
     position:relative;
     height: 100%;
     width: 100%;
@@ -44,9 +58,28 @@ body {
     }
     .container-fluid .jumbotron {
     }
+    .dl-horizontal > dt {
+        width: 100px;
+    }
+    .dl-horizontal > dd {
+        margin-left: 120px;
+    }
+@media screen and (min-height: 520px) {
+    .overlay {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 37%;
+        z-index: 10;
+    background: url(bg.jpg) no-repeat bottom center fixed;
+    background-size: cover;
+    }
+}
 }
 
 footer {
+    z-index: 100;
     position: relative;
     padding: 0;
     margin: 0;
