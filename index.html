@@ -35,46 +35,43 @@ Validate this:
                                    <link rel="shortcut icon" href="/ico/favicon.png">
   </head>
   <body lang="en-US">
-  <div class="container-fluid">
-      <div class="row page page-1">
-          <div class="col-xs-12 col-md-12 col-lg-12">
+  <div class="container">
+      <div class="row page">
+          <div class="col-xs-12 col-sm-10 col-md-10 col-lg-6 col-lg-offset-3
+              col-md-offset-1 col-sm-offset-1">
       <div class="jumbotron">
           <div class="hgroup">
-              <h1>Milan Oberkirch
-                  <small><br>
-                      Software engineer, developer,<br/> system admin, and linux expert.
-            </small></h1>
+              <h2><span
+                      class=text-info>Milan David</span> <span
+                      class="text-primary">Oberkirch</span></h2>
           </div>
-      </div>
-      </div>
-          </div>
-      <div class="row page page-2">
-          <div class="col-xs-12 col-md-12 col-lg-12">
-          <div class="jumbotron contact">
-              <h2>Get in touch</h2>
+          <hr>
               <dl class=dl-horizontal>
+                  <dt>profession</dt><dd>software engineer, developer,
+                      admin, linux expert, programmer</dd>
+                  <dt>languages</dt><dd>English, German, Python, C/C++, SQL,
+                  Django, PHP, JS, CSS 3, HTML 5 </dd>
+                  <dt>degree</dt><dd>Bachelor of Science in Computer Science</dd>
+                  <dt>social</dt><dd>
+                    <a href="http://github.com/zvyn">GitHub</a>,
+                    <a
+                        href="http://google.com/+MilanOberkirch?rel=author">Google+</a>,
+                    <a
+                        href="http://www.linkedin.com/in/milanoberkirch">LinkedIn</a>,
+                    <a href="http://zvyn.wordpress.com">WordPress</a>
+                    </dd>
                   <dt class="mail">
                     <a
-                        href="mailto:&#109;&#97;&#105;&#108;&#64;oberkirch&#46;org">E-Mail</a>
+                        href="mailto:&#109;&#97;&#105;&#108;&#64;oberkirch&#46;org">email</a>
                     </dt><dd><span id="obscurity">mail at oberkirch dot org</span>
                                 <small><a class="pgp"
                                 href="https://keyserver.pgp.com/vkd/DownloadKey.event?keyid=0x66189C478186E391">
                                 (PGP)</a></small>
                   <dt class="phone">
-                    <a href="tel:&#48;&#48;&#52;&#57;&#49;&#53;&#49;&#50;&#55;&#49;&#49;&#56;&#49;&#51;&#56;">Phone</a>
+                    <a href="tel:&#48;&#48;&#52;&#57;&#49;&#53;&#49;&#50;&#55;&#49;&#49;&#56;&#49;&#51;&#56;">phone</a>
                   </dt>
                   <dd>+49 151 2711 8138</dd>
-                  <dt class="github">
-                    <a href="http://github.com/zvyn">Github</a>
-                    </dt><dd>github.com/zvyn</dd>
-                  <dt class="google_plus">
-                    <a href="http://google.com/+MilanOberkirch?rel=author">Google</a>
-                    </dt><dd>+Milan Oberkirch</dd>
-                  <dt class="linkedin">
-                    <a href="http://www.linkedin.com/in/milanoberkirch">LinkedIn</a>
-                    </dt><dd>/in/milanoberkirch</dd>
               </dl>
-              <div class="overlay"></div>
           </div>
           </div>
       </div>
@@ -97,7 +94,7 @@ Validate this:
  a += c
  b += 'oberkirch'
  d += b + a
- document.getElementById('obscurity').innerText = d
+ document.getElementById('obscurity').innerHTML = d
  })()
 </script>
 </div>
