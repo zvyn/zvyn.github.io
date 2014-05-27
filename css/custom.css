@@ -38,6 +38,7 @@ body {
 }
 
 .container .jumbotron, .container-fluid .jumbotron {
+    background: transparent;
 }
 
 .jumbotron, .hgroup>h2 {
