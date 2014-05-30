@@ -1,4 +1,5 @@
 html {
+    border-top: solid #31708f;
 }
 
 body {
@@ -14,9 +15,12 @@ body {
     margin: 0;
     padding: 0;
     position:relative;
+    margin-top: -1em;
     min-height: 100%;
     width: 100%;
     overflow-x: auto;
+    background: url(bg.jpg) no-repeat bottom right;
+    background-size: 100%;
 }
 
 .page-1 {
@@ -51,11 +55,6 @@ body {
     background-color: rgba(255,255,255,0.9);
     box-shadow: 0 0 3em 3em rgba(255,255,255,0.9);
 }
-html {
-    border-top: solid #f1f1f1;
-    background: url(bg.jpg) no-repeat bottom right fixed;
-    background-size: 100%;
-}
 @media screen and (min-width: 768px) {
     .container, .container-fluid {
         padding-top: 3em;
@@ -81,21 +80,54 @@ html {
     }
     .jumbotron > hr {
         margin-left: 120px;
+        border-color: #31708f;
     }
 
 }
 
-footer {
-    z-index: 100;
-    position: relative;
-    padding: 0 5px 0 0;
-    margin: 0;
-    width: 100%;
-    font-size: 12px;
-    background: rgba(0,0,0,0.8);
-    border-bottom: solid black;
+img {
+    max-width: 100%;
+    max-height: 80px;
+    text-align: center;
+    text-align: -webkit-center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
+.ref, .impressum{
+    height: 100px;
+   display: -webkit-box;
+    -webkit-box-align: center;
+   display: -moz-box;
+   -moz-box-align: center;
+   display: -ms-flexbox;
+   -ms-box-align: center; 
+   display: box;
+   box-align: center; 
+}
+
+.img-container {
+    display: block;
+    vertical-align: middle;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+footer.row {
+    margin-top: -3px;
+    color: #fefefe;
+    z-index: 100;
+    position: relative;
+    width: 100%;
+    background: rgba(48,48,48,1);
+    border-top: solid 3px #31708f;
+}
+
+.impressum {
+    font-size: 10px;
+    text-align: right;
+}
 .row {
     margin: 0;
 }
