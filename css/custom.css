@@ -95,7 +95,8 @@ img {
 }
 
 .ref, .impressum{
-    height: 100px;
+    height: 105px;
+    padding-top: 5px;
    display: -webkit-box;
     -webkit-box-align: center;
    display: -moz-box;
