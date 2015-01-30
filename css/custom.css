@@ -1,26 +1,13 @@
 html {
-    border-top: solid #31708f;
-}
-
-body {
-    overflow-x: hidden;
-    background-color: transparent;
-}
-
-.contact > dl > dt > a, footer, h1, h2 {
-    text-shadow: none;
 }
 
 .page {
-    margin: 0;
-    padding: 0;
+    padding-top: 50px;
     position:relative;
-    margin-top: -1em;
     min-height: 100%;
-    width: 100%;
     overflow-x: auto;
-    background: url(bg.jpg) no-repeat bottom right;
-    background-size: 100%;
+  background-color: white;
+    margin-bottom: 1em;
 }
 
 .page-1 {
@@ -28,12 +15,9 @@ body {
 .page-2 {
 }
 
-.container, .container-fluid, body, html {
+.container, body, html {
     position:relative;
     height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
 }
 
 .col-lg-12, .col-md-12, .col-xs-12 {
@@ -42,7 +26,7 @@ body {
 }
 
 .jumbotron {
-    background: transparent;
+  background-color: white;
 }
 
 .jumbotron, .hgroup>h2 {
@@ -55,86 +39,8 @@ body {
     background-color: rgba(255,255,255,0.9);
     box-shadow: 0 0 3em 3em rgba(255,255,255,0.9);
 }
-@media screen and (min-width: 768px) {
-    .container, .container-fluid {
-        padding-top: 3em;
-    }
-    .container-fluid .jumbotron {
-    }
-    .dl-horizontal > dt {
-        width: 100px;
-        color: #999;
-    }
-    .dl-horizontal > dd {
-        margin-left: 120px;
-    }
-    .hgroup {
-        padding-left: 120px;
-    }
-    .container .jumbotron {
-        font-size: 120%;
-        padding: 48px 0 0 0;
-        margin-left: auto;
-        margin-right: auto;
-        width: 650px;
-    }
-    .jumbotron > hr {
-        margin-left: 120px;
-        border-color: #31708f;
-    }
-
+body {
+    overflow-x: hidden;
+    background-size: 100%;
+    background-color: grey;
 }
-
-img {
-    max-width: 100%;
-    max-height: 80px;
-    text-align: center;
-    text-align: -webkit-center;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.ref, .impressum{
-    height: 105px;
-    padding-top: 5px;
-   display: -webkit-box;
-    -webkit-box-align: center;
-   display: -moz-box;
-   -moz-box-align: center;
-   display: -ms-flexbox;
-   -ms-box-align: center; 
-   display: box;
-   box-align: center; 
-}
-
-.img-container {
-    display: block;
-    vertical-align: middle;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-footer.row {
-    margin-top: -3px;
-    color: #fefefe;
-    z-index: 100;
-    position: relative;
-    width: 100%;
-    background: rgba(48,48,48,1);
-    border-top: solid 3px #31708f;
-}
-
-.impressum {
-    font-size: 10px;
-    text-align: right;
-}
-.row {
-    margin: 0;
-}
-
-.contact {
-    font-size: 150%;
-    line-height: 1.5;
-}
-
