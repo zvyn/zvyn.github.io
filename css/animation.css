@@ -2,87 +2,38 @@
     /* webkit animations */
     @-webkit-keyframes turn {
         from {
+            overflow: hidden;
             opacity: 0;
-            transform: rotate(32deg) scale(0.3);
-            border-radius: 50em;
+            transform: scale(0);
         }
-        66% {
+        50% {
+            transform: scale(1.1);
+        }
+        to {
             opacity: 1;
-        }
-        to {
             transform: none;
-        }
-    }
-    @-webkit-keyframes conterturn {
-        from {
-            transform: rotate(-16deg) scale(0.4);
-        }
-        to {
-            transform: none;
-        }
-    }
-    @-webkit-keyframes bgin {
-        from {
-            background-position: top center;
-        }
-        to {
-            background-position: bottom center;
         }
     }
 
     /* generic animations */
     @keyframes turn {
         from {
+            overflow: hidden;
             opacity: 0;
-            transform: rotate(32deg) scale(0.3);
-            border-radius: 50em;
+            transform: scale(1.2);
         }
-        66% {
+        to {
             opacity: 1;
-        }
-        to {
             transform: none;
-        }
-    }
-    @keyframes conterturn {
-        from {
-            transform: rotate(-16deg) scale(0.4);
-        }
-        to {
-            transform: none;
-        }
-    }
-    @keyframes bgin {
-        from {
-            background-position: top center;
-        }
-        to {
-            background-position: bottom center;
         }
     }
 
     /* add animations to elements */
     body {
         -webkit-animation-duration: 1s;
-        -webkit-animation-name: bgin;
-        animation-duration: 1s;
-        animation-name: bgin;
-    }
-    }
-    .container {
-        -webkit-animation-duration: 1s;
         -webkit-animation-name: turn;
-        animation-duration: 1s;
+        animation-duration: 5s;
         animation-name: turn;
-        transform-origin: top center;
         border-radius: 6px;
     }
-    .row.content .col-sm-4 {
-        -webkit-animation-duration: 1s;
-        -webkit-animation-name: conterturn;
-        animation-duration: 1s;
-        animation-name: conterturn;
-    }
-    .row-content .col-sm-4 {
-        transform-origin: bottom right;
 }

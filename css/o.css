@@ -1,45 +1,23 @@
-@font-face {
-  font-family: 'Ubuntu';
-  font-style: normal;
-  font-weight: 300;
-  src: local('Ubuntu'), url(http://fonts.gstatic.com/s/droidsans/v6/s-BiyweUPV0v-yRb-cjciPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2'), url(http://fonts.gstatic.com/s/ubuntu/v7/_xyN3apAT_yRRDeqB3sPRg.woff) format('woff'), url(http://fonts.gstatic.com/s/ubuntu/v7/2Q-AW1e_taO6pHwMXcXW5w.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Droid Sans';
-  font-style: normal;
-  font-weight: 400;
-  src: local('Droid Sans'), local('DroidSans'), url(http://fonts.gstatic.com/s/droidsans/v6/s-BiyweUPV0v-yRb-cjciPk_vArhqVIZ0nv9q090hN8.woff2) format('woff2'), url(http://fonts.gstatic.com/s/droidsans/v6/s-BiyweUPV0v-yRb-cjciBsxEYwM7FgeyaSgU71cLG0.woff) format('woff'),  url(http://fonts.gstatic.com/s/droidsans/v6/s-BiyweUPV0v-yRb-cjciC3USBnSvpkopQaUR-2r7iU.ttf) format('truetype') ;
-}
-
 body {
     width: 100%;
+    font-family: 'Open Sans', sans;
+    color: #444444;
+}
+h1, .jumbotron>h1 {
+    font-family: 'Ubuntu', sans;
+    font-weight: 300;
 }
 
 body:hover .container {
 }
-.container .jumbotron, .jumbotron p, .col-sm-4 h1 {
-    font-family: "Exo 2", Ubuntu, "Droid Sans", sans;
-}
 .container .jumbotron {
+    text-align: center;
     background: transparent;
     padding-bottom: 0;
 }
 
-p, li {
-    font-family: "Droid Sans";
-}
-
 .container {
-    background-color: rgba(255,255,255,0.8);
     padding-bottom: 45px;
-    box-shadow: rgba(0,0,0,0.2) 0em 0em 0.5em -0.2em;
-}
-
-body:hover .container:hover {
-}
-
-.container .col-sm-4 h1, .jumbotron h1 {
-    color: #333;
 }
 
 .row.content {
@@ -47,25 +25,25 @@ body:hover .container:hover {
     padding-right: 45px;
     border-radius: 6px;
 }
-.row.content .col-sm-4:hover {
-    border-radius: 0px 0px 0px 6px;
+.row.content .col-sm-4:hover, .jumbotron {
+    color: black;
 }
 .row.content .col-sm-4:hover a {
     color: #337ab7;
-}
-.row.content .col-sm-4 {
 }
 .row.content .col-sm-4 a {
     color: black;
     transition: color 0.2s linear;
 }
-
-@media (min-width: 768px) {
-body {
-    background: url("mua.jpg") no-repeat fixed bottom center;
-    background-size: 100%;
-    transition: background 0.2s linear;
-    color: black;
-    padding-top: 2em;
+#face {
+    border-radius: 30em;
 }
+
+@media (max-width: 768px) {
+    body {
+        color: black !important;
+    }
+    a {
+        color: #337ab7 !important;
+    }
 }
