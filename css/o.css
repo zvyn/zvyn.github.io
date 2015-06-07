@@ -1,4 +1,4 @@
-body {
+html {
     width: 100%;
     font-family: 'Open Sans', sans;
     color: #444444;
@@ -8,33 +8,12 @@ h1, .jumbotron>h1 {
     font-weight: 300;
 }
 
-body:hover .container {
-}
-.container .jumbotron {
+.jumbotron {
     text-align: center;
-    background: transparent;
-    padding-bottom: 0;
+    background: rgba(255,255,255,0.5);
+    margin-top: 1em;
 }
 
-.container {
-    padding-bottom: 45px;
-}
-
-.row.content {
-    padding-left: 45px;
-    padding-right: 45px;
-    border-radius: 6px;
-}
-.row.content .col-sm-4:hover, .jumbotron {
-    color: black;
-}
-.row.content .col-sm-4:hover a {
-    color: #337ab7;
-}
-.row.content .col-sm-4 a {
-    color: black;
-    transition: color 0.2s linear;
-}
 #face {
     border-radius: 30em;
 }
@@ -45,5 +24,46 @@ body:hover .container {
     }
     a {
         color: #337ab7 !important;
+    }
+}
+
+.layer-link.collapsed {
+    color: black;
+    text-decoration: none;
+}
+
+.link-list > li:after {
+    content: ', ';
+}
+.link-list > li:last-child:after  {
+    content: '.';
+}
+body {
+    background: url(/gallery/Piha.jpg) right no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+}
+.well {
+    background-color: rgba(255,255,255,0.75);
+    border: 1px solid rgba(255,255,255,0.5);
+}
+.well:hover, ul.social > li:hover {
+    /* background-color: rgba(255,255,255,0.875); */
+}
+#eecrow {
+    margin-left: -30px;
+    margin-right: -30px;
+}
+@media (max-width: 768px) {
+    #eecrow {
+        background-color: rgba(255,255,255,0.875);
+    }
+    #eecrow > div > div.well {
+        margin: 0;
+        border: none;
+        border-radius: 0;
+        box-shadow: none;
+        background: transparent;
     }
 }

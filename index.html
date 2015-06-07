@@ -27,83 +27,98 @@ Validate this:
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
-      <script src="js/html5shiv.js"></script>
+        <script src="js/html5shiv.js"></script>
     <![endif]-->
 
     <!-- Fav and touch icons -->
     <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/apple-touch-icon-144-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114-precomposed.png">
-      <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72-precomposed.png">
-                    <link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-57-precomposed.png">
-                                   <link rel="shortcut icon" href="/ico/favicon.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="/ico/favicon.png">
   </head>
-  <body lang="en-US">
-    <div class="github-fork-ribbon-wrapper right">
-        <div class="github-fork-ribbon">
-            <a href="https://github.com/zvyn/zvyn.github.io/">Fork me on GitHub</a>
-        </div>
-    </div>
-   <div class=container>
-     <div class=row>
-       <div class=jumbotron>
-         <img id=face src="./ico/ms-touch-icon.gif">
-         <h1>Milan Oberkirch</h1>
-         <hr>
-         <p>I'm a software engineer travelling through New Zealand as a
-         backpacker doing some physical work while enjoying the nature and the
-         humans I meet. In mid 2015 I am going to continue improving,
-         combining, and inventing software solutions.</p>
-         <hr>
-       </div>
-     </div>
-     <div class="row content">
-       <div class=col-sm-4>
-         <h1>Expertise</h1>
-           <p>
-           As an active community member I enjoy working on and with Python and
-           Linux the most. You can find some of the things I did on <a
-          href=http://github.com/zvyn>Github</a>, the <a
-          href=https://aur.archlinux.org/packages/?SeB=m&K=zvyn>Arch User
-          Repository</a>, or in the Python repository.</p>
-           <p>I recently graduated as Bachelor of Computer Sciences at the
-           Albert-Ludwigs-University in Freiburg which gave me theoretical
-           insight in algorithms, datastructures, databases, and discrete
-           algebra.</p>
-       </div>
-       <div class=col-sm-4>
-         <h1>Experience</h1>
-         <p>
-         Besides the already mentioned involvement in Open Source projects I
-         took part in the <a
-          href=https://www.google-melange.com/gsoc/homepage/google/gsoc2014>Google
-          Summer of Code 2014</a> and work as a freelancer for example for the
-          <a href=http://www.regionalwert-ag.de>Regionalwert AG</a>.</p>
-         <p>Some of the things I utilice:<br>
-          C, C++, Python, PHP, bash, JavaScript,<br>
-          Docker, Git, Django, Boost, Qt, Webkit, Bootstrap, HTML 5, CSS 3,<br>
-          Nginx, Apache, MySQL, MariaDB, PostgreSQL, postfix, dovecot, dhcpcd,
-          dnsmasq, PXE, ...</p>
-       </div>
-       <div class=col-sm-4>
-         <h1>Contact</h1>
-         <p>
-         You can reach me via </p><ul>
-             <li><a
-          href=mailto:&#109;&#97;&#105;&#108;&#64;oberkirch&#46;org>email</a>
-                 (&#109;&#97;&#105;&#108;&#64;oberkirch&#46;org) or</li>
-             <li><a
-          href=tel:&#48;&#48;&#52;&#57;&#49;&#53;&#49;&#50;&#55;&#49;&#49;&#56;&#49;&#51;&#56;>phone</a>
-                 (&#48;&#48;&#52;&#57;&#49;&#53;&#49;&#50;&#55;&#49;&#49;&#56;&#49;&#51;&#56;)</li></ul>
-         <p>or find me at</p><ul>
-             <li><a href="http://github.com/zvyn">GitHub</a>,</li>
-             <li>
-          <a
-             href="http://google.com/+MilanOberkirch?rel=author">Google+</a>
-          or</li>
-          <li><a
-             href="http://www.linkedin.com/in/milanoberkirch">LinkedIn</a>.</li></ul>
-       </div>
-     </div>
-   </div> <!-- /container -->
+  <body lang="en-US" ng-controller="layerListCtrl">
+      <div class="github-fork-ribbon-wrapper right">
+          <div class="github-fork-ribbon">
+              <a href="https://github.com/zvyn/zvyn.github.io/">Fork me on GitHub</a>
+          </div>
+      </div>
+      <div class=container>
+          <div class=row>
+              <div class=jumbotron>
+                  <img id=face src="./ico/ms-touch-icon.gif" class="visible-xs-inline-block">
+                  <h1>Milan Oberkirch</h1>
+                  <hr>
+                    <p class="slagline">I'm a software engineer who loves to develop
+                    simple solutions for complex ideas.
+                  </p>
+                  <hr>
+                  <ul class="list-inline social">
+                      <li><a class="btn btn-default"
+                      href=mailto:&#109;&#97;&#105;&#108;&#64;oberkirch&#46;org>Email</a></li>
+                      <li class="visible-xs-inline-block"><a class="btn btn-default"
+                      href="tel:&#43;&#54;&#52;&#50;&#55;&#51;417631">Phone</a>
+                      <li><a class="btn btn-default" href="http://github.com/zvyn">GitHub</a></li>
+                      <li>
+                          <a class="btn btn-default"
+                             href="http://google.com/+MilanOberkirch?rel=author">Google+</a>
+                      </li>
+                      <li><a class="btn btn-default"
+                             href="http://www.linkedin.com/in/milanoberkirch">LinkedIn</a></li></ul>
+              </div>
+          </div>
+          <div class="row" id="eecrow">
+              <div class=col-sm-4>
+                 <div class="well">
+                  <h1>Expertise</h1>
+                  <p>
+                  As an active community member I enjoy working on and with Python and
+                  Linux the most. You can find some of the things I did on <a
+                                                                     href=http://github.com/zvyn>Github</a>, the <a
+                                                                     href=https://aur.archlinux.org/packages/?SeB=m&K=zvyn>Arch User
+                                                                     Repository</a>, or in the Python repository.</p>
+                  <p>I recently graduated as Bachelor of Computer Sciences at the
+                  Albert-Ludwigs-University in Freiburg which gave me theoretical
+                  insight in algorithms, datastructures, databases, and discrete
+                  algebra.</p>
+              </div>
+              </div>
+              <div class=col-sm-4>
+                 <div class="well">
+                  <h1>Experience</h1>
+                  <p>
+                  Besides the already mentioned involvement in Open Source projects I
+                  took part in the <a
+                                                                     href=https://www.google-melange.com/gsoc/homepage/google/gsoc2014>Google
+                                                                     Summer of Code 2014</a> and work as a freelancer for example for the
+                                                                 <a href=http://www.regionalwert-ag.de>Regionalwert AG</a>.</p>
+                  <p>Some of the things I utilice:<br>
+                  C, C++, Python, PHP, bash, JavaScript,<br>
+                  Docker, Git, Django, Boost, Qt, Webkit, Bootstrap, HTML 5, CSS 3,<br>
+                  Nginx, Apache, MySQL, MariaDB, PostgreSQL, postfix, dovecot, dhcpcd,
+                  dnsmasq, PXE, ...</p>
+              </div>
+              </div>
+              <div class=col-sm-4>
+                 <div class="well">
+                  <h1>Contact</h1>
+                  <p>
+                  I'm intending to settle down in Wellington and would love to
+                  hear from you at
+                  <a href=mailto:&#109;&#97;&#105;&#108;&#64;oberkirch&#46;org>&#109;&#97;&#105;&#108;&#64;oberkirch&#46;org</a>
+                  if you are searching for a software developer or know someone
+                  who does.
+                  </p>
+                  <p>You can also find me at</p>
+                  <ul class="link-list">
+                      <li><a href="http://github.com/zvyn">GitHub</a></li>
+                      <li>
+                          <a
+                             href="http://google.com/+MilanOberkirch?rel=author">Google+</a></li>
+                      <li><a
+                             href="http://www.linkedin.com/in/milanoberkirch">LinkedIn</a></li></ul>
+              </div>
+              </div>
+          </div>
   </body>
 </html>

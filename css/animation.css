@@ -1,39 +1,32 @@
-@media (min-width: 768px) {
-    /* webkit animations */
-    @-webkit-keyframes turn {
-        from {
-            overflow: hidden;
-            opacity: 0;
-            transform: scale(0);
-        }
-        50% {
-            transform: scale(1.1);
-        }
-        to {
-            opacity: 1;
-            transform: none;
-        }
+@keyframes scaley {
+    from {
+        opacity: 0;
+        transform: scaleY(0);
     }
+    to {
+        transform: scaleY(1);
+        transform: none;
+    }
+}
+@keyframes scalex {
+    from {
+        transform: scaleX(0);
+    }
+    50% {
+        transform: scaleX(0);
+    }
+    to {
+        transform: none;
+    }
+}
 
-    /* generic animations */
-    @keyframes turn {
-        from {
-            overflow: hidden;
-            opacity: 0;
-            transform: scale(1.2);
-        }
-        to {
-            opacity: 1;
-            transform: none;
-        }
-    }
-
-    /* add animations to elements */
-    body {
-        -webkit-animation-duration: 1s;
-        -webkit-animation-name: turn;
-        animation-duration: 5s;
-        animation-name: turn;
-        border-radius: 6px;
-    }
+.jumbotron {
+    transform-origin: top;
+    animation-duration: 0.3s;
+    animation-name: scaley;
+}
+.well {
+    transform-origin: left;
+    animation-duration: 0.6s;
+    animation-name: scalex;
 }
