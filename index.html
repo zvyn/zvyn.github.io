@@ -38,15 +38,16 @@ Validate this:
     <link rel="shortcut icon" href="/ico/favicon.png">
   </head>
   <body lang="en-US" ng-controller="layerListCtrl">
-      <div class="github-fork-ribbon-wrapper right">
+      <div class="hide-content hidden-xs"><span class="glyphicon
+      glyphicon-picture"</span></div>
+      <div class="github-fork-ribbon-wrapper right hidden-xs">
           <div class="github-fork-ribbon">
               <a href="https://github.com/zvyn/zvyn.github.io/">Fork me on GitHub</a>
           </div>
       </div>
       <div class=container>
-          <div class=row>
+          <div class=row style="height: 100%">
               <div class=jumbotron>
-                  <img id=face src="./ico/ms-touch-icon.gif" class="visible-xs-inline-block">
                   <h1>Milan Oberkirch</h1>
                   <hr>
                     <p class="slagline">I'm a software engineer who loves to develop
@@ -68,57 +69,107 @@ Validate this:
               </div>
           </div>
           <div class="row" id="eecrow">
-              <div class=col-sm-4>
+              <div class=col-sm-5>
                  <div class="well">
-                  <h1>Expertise</h1>
-                  <p>
-                  As an active community member I enjoy working on and with Python and
-                  Linux the most. You can find some of the things I did on <a
-                                                                     href=http://github.com/zvyn>Github</a>, the <a
-                                                                     href=https://aur.archlinux.org/packages/?SeB=m&K=zvyn>Arch User
-                                                                     Repository</a>, or in the Python repository.</p>
-                  <p>I recently graduated as Bachelor of Computer Sciences at the
-                  Albert-Ludwigs-University in Freiburg which gave me theoretical
-                  insight in algorithms, datastructures, databases, and discrete
-                  algebra.</p>
-              </div>
-              </div>
-              <div class=col-sm-4>
-                 <div class="well">
+                     <div class="btn-close pull-right"><span class="glyphicon
+                             glyphicon-remove remove-parent"></span></div>
                   <h1>Experience</h1>
                   <p>
-                  Besides the already mentioned involvement in Open Source projects I
-                  took part in the <a
-                                                                     href=https://www.google-melange.com/gsoc/homepage/google/gsoc2014>Google
-                                                                     Summer of Code 2014</a> and work as a freelancer for example for the
-                                                                 <a href=http://www.regionalwert-ag.de>Regionalwert AG</a>.</p>
-                  <p>Some of the things I utilice:<br>
-                  C, C++, Python, PHP, bash, JavaScript,<br>
-                  Docker, Git, Django, Boost, Qt, Webkit, Bootstrap, HTML 5, CSS 3,<br>
-                  Nginx, Apache, MySQL, MariaDB, PostgreSQL, postfix, dovecot, dhcpcd,
-                  dnsmasq, PXE, ...</p>
+                  I graduated with a Bachelor of Computer Sciences last year while
+                  working as a tutor, freelancer and contributor to open source
+                  projects for the last four years. I am passionate about
+                  solving problems the best way possible and am constantly
+                  learning how to do so.</p>
+                  <h4>Open source</h4><p>
+                  I'm a member of the <a
+                      href=https://www.python.org/users/zvyn/">Python Software
+                      Foundation</a> and contribute
+                  to CPython and Archlinux in my free time. You can find some of the things I did on <a
+                                                                     href=http://github.com/zvyn>Github</a>, the <a
+                                                                     href=https://aur.archlinux.org/packages/?SeB=m&K=zvyn>Arch User
+                                                                     Repository</a>,
+                                                                 or in the <a
+                      href="http://python.org">Python</a> repository.</p>
+                  <h4>Professional</h4><p>My clients as a freelancer include the <a
+                      href="http://www.regionalwert-ag.de/">Regionalwert
+                      AG</a>, and <a
+                      href="http://www.haendel.uni-freiburg.de/">Händelwohnheim</a>.
+                  I also took part in the <a
+                      href="https://www.google-melange.com/gsoc/homepage/google/gsoc2014">GSoC
+                      2014</a> by implementing Unicode support for the Python
+                  email package</a>.
               </div>
               </div>
-              <div class=col-sm-4>
+              <div class=col-sm-7>
                  <div class="well">
-                  <h1>Contact</h1>
-                  <p>
-                  I'm intending to settle down in Wellington and would love to
-                  hear from you at
-                  <a href=mailto:&#109;&#97;&#105;&#108;&#64;oberkirch&#46;org>&#109;&#97;&#105;&#108;&#64;oberkirch&#46;org</a>
-                  if you are searching for a software developer or know someone
-                  who does.
-                  </p>
-                  <p>You can also find me at</p>
-                  <ul class="link-list">
-                      <li><a href="http://github.com/zvyn">GitHub</a></li>
-                      <li>
-                          <a
-                             href="http://google.com/+MilanOberkirch?rel=author">Google+</a></li>
-                      <li><a
-                             href="http://www.linkedin.com/in/milanoberkirch">LinkedIn</a></li></ul>
+                     <div class="btn-close pull-right"><span class="glyphicon
+                             glyphicon-remove remove-parent"></span></div>
+                  <h1>Skills</h1>
+                  <p>Fluent in German and English, able to work in teams of any
+                  size and on my own. Passionate learner, open for new
+                  challenges, able to find resources and research existing
+                  solutions. Analytical thinker and problem-solver.</p>
+                  <h4>Design patterns and principles</h4>
+                  <p>The most important principles for me are <a
+                      href="https://en.wikipedia.org/wiki/KISS_principle">KISS</a>,
+                  <a
+                      href="https://en.wikipedia.org/wiki/Don%27t_repeat_yourself">DRY</a>,
+                  and <a
+                      href="https://en.wikipedia.org/wiki/SOLID_(object-oriented_design)">SOLID</a>.
+                  Listing all the patterns worth considering in a project would
+                  be beyond the scope of this page, I recommend the book <a
+                      href="http://www.headfirstlabs.com/books/hfdp/">"Head
+                      First Design Patterns"</a> for a good overview.
+                  <h4>Computer languages</h4>
+                  <p>Most proficient in Python, CSS 3, HTML 5, and PHP, basic
+                  working knowledge in SQL, C, C++, C#, and JavaScript. Also used
+                  Bash, Pascal, and Scheem in the past.</p>
+                  <h4>Tools</h4>
+                  <p>Docker, Git, Django, Boost, Qt, Webkit, Bootstrap,
+Nginx, Apache, MySQL, MariaDB, PostgreSQL, postfix, dovecot, dhcpcd, dnsmasq,
+PXE, vim, ...</p>
+              </div>
               </div>
               </div>
           </div>
+          <script>
+(function () {
+    var timeout = 7000;
+    var backgrounds = ['Piha', 'NorthWellington', 'MtCook', 'SouthWellington'];
+    var currentBackgroundID = -1;
+    var setNextBg = function() {
+        var b = document.body;
+        nextID = (currentBackgroundID + 1) % backgrounds.length;
+        b.style.backgroundImage = "url(/gallery/" + backgrounds[nextID] + ".jpg)";
+        currentBackgroundID = nextID;
+        setTimeout(setNextBg, timeout);
+    }
+    setNextBg();
+})();
+(function () {
+    var removers = document.getElementsByClassName('remove-parent');
+    for(i in removers) {
+        removers[i].onclick = function (e) {
+            e.path[3].style.opacity = 0;
+            e.path[3].style.overflow = "hidden";
+            e.path[3].style.height = 0;
+            e.path[3].style.width = 0;
+            setTimeout(function(){
+                e.path[3].hidden = true;
+            }, 300);
+        }
+    }
+})();
+(function () {
+    var pictureIcon = document.getElementsByClassName('glyphicon-picture')[0];
+    pictureIcon.onmouseover = function () {
+        document.body.style.opacity = 0;
+    };
+    pictureIcon.onmouseout = function () {
+        document.body.style.opacity = 1;
+    };
+    pictureIcon.onmouseup = pictureIcon.onmouseout;
+})();
+          </script>
   </body>
 </html>
