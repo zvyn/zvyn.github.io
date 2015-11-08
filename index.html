@@ -18,12 +18,8 @@ Validate this:
     <meta name="msapplication-TileColor" content="#0088cc"/>
     <meta name="msapplication-TileImage" content="/ico/ms-touch-icon.png"/>
 
-
-    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300|Open+Sans' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/css/o.css">
-    <link rel="stylesheet" href="/css/animation.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.1.1/gh-fork-ribbon.min.css" />
+    <link rel="stylesheet" href="/css/custom.css">
+    <link rel="stylesheet" href="/css/octicons/octicons.css">
 
     <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
     <!--[if lt IE 9]>
@@ -37,76 +33,16 @@ Validate this:
     <link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-57-precomposed.png">
     <link rel="shortcut icon" href="/ico/favicon.png">
   </head>
-  <body lang="en-US" ng-controller="layerListCtrl">
-      <div class="hide-content hidden-xs"><span class="glyphicon
-      glyphicon-picture"</span></div>
-      <div class="github-fork-ribbon-wrapper right hidden-xs">
-          <div class="github-fork-ribbon">
-              <a href="https://github.com/zvyn/zvyn.github.io/">Fork me on GitHub</a>
-          </div>
-      </div>
-      <div class=container>
-          <div class=row style="height: 100%">
-              <div class=jumbotron>
-                  <h1>Milan Oberkirch</h1>
-                  <hr>
-                    <p class="slagline">I'm a software engineer who loves to develop
-                    simple solutions for complex ideas.
-                  </p>
-                  <hr>
-                  <ul class="list-inline social">
-                      <li><a class="btn btn-default"
-                      href=mailto:&#109;&#97;&#105;&#108;&#64;oberkirch&#46;org>Email</a></li>
-                      <li class="visible-xs-inline-block"><a class="btn btn-default"
-                      href="tel:&#43;&#54;&#52;&#50;&#55;&#51;417631">Phone</a>
-                      <li><a class="btn btn-default" href="http://github.com/zvyn">GitHub</a></li>
-                      <li>
-                          <a class="btn btn-default"
-                             href="http://google.com/+MilanOberkirch?rel=author">Google+</a>
-                      </li>
-                      <li><a class="btn btn-default"
-                             href="http://www.linkedin.com/in/milanoberkirch">LinkedIn</a></li></ul>
-              </div>
-          </div>
-          </div>
-          <script>
-(function () {
-    var timeout = 7000;
-    var backgrounds = ['Piha', 'NorthWellington', 'MtCook', 'SouthWellington'];
-    var currentBackgroundID = -1;
-    var setNextBg = function() {
-        var b = document.body;
-        nextID = (currentBackgroundID + 1) % backgrounds.length;
-        b.style.backgroundImage = "url(/gallery/" + backgrounds[nextID] + ".jpg)";
-        currentBackgroundID = nextID;
-        setTimeout(setNextBg, timeout);
-    }
-    setNextBg();
-})();
-(function () {
-    var removers = document.getElementsByClassName('remove-parent');
-    for(i in removers) {
-        removers[i].onclick = function (e) {
-            e.path[3].style.opacity = 0;
-            e.path[3].style.overflow = "hidden";
-            e.path[3].style.height = 0;
-            e.path[3].style.width = 0;
-            setTimeout(function(){
-                e.path[3].hidden = true;
-            }, 300);
-        }
-    }
-})();
-(function () {
-    var pictureIcon = document.getElementsByClassName('glyphicon-picture')[0];
-    pictureIcon.onmouseover = function () {
-        document.body.style.opacity = 0;
-    };
-    pictureIcon.onmouseout = function () {
-        document.body.style.opacity = 1;
-    };
-    pictureIcon.onmouseup = pictureIcon.onmouseout;
-})();
-          </script>
-  </body>
+    <body lang="en-NZ">
+<div class="vcard" itemscope="" itemtype="http://schema.org/Person">
+<ul class="vcard-details">
+  <li class="vcard-names"><span class="octicon octicon-person"></span><strong><span class="vcard-fullname" itemprop="name">Milan David Oberkirch</span></strong></li>
+  <li class="vcard-detail" title="Bachelor of Computer Sciences"><span class="octicon octicon-mortar-board"></span>Sofware Engineer</li>
+  <li class="vcard-detail" itemprop="homeLocation" title="Wellington, New Zealand"><span class="octicon octicon-location"></span>Wellington, New Zealand</li>
+    <li class="vcard-detail"><span class="octicon octicon-mail"></span><a class="email" href="mailto:%7a%76%79%6e@%6f%62%65%72%6b%69%72%63%68.%6f%72%67">zvyn@oberkirch.org</a></li>
+  <li class="vcard-detail"><span class="octicon octicon-mark-github"></span><a href="http://github.com/zvyn" class="url">github.com/zvyn</a></li>
+</ul>
+
+    </div>
+    </body>
 </html>
