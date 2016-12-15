@@ -1,43 +1,43 @@
-* {
-    box-sizing: border-box;
+html {
+  text-size-adjustment: 100%;
 }
-body {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-    font-size: 14px;
-    line-height: 1.42857;
-    color: #333;
+hr {
+  border-color: #31708f;
+  border-style: none;
+  border-width: 0px;
+  border-top-style: solid;
+  border-top-width: 1px;
+  box-sizing: content-box;
+  margin: 20px;
+  margin-left: 80px;
 }
-.vcard {
-    margin-bottom: 20px;
-    background-color: #FFF;
-    border: 1px solid transparent;
-    border-radius: 4px;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.05);
-    border-color: #DDD;
-    display: table;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 3em;
+.container {
+  font-family: "Open Sans", Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 48px 0 0 0;
+  margin-left: auto;
+  margin-right: auto;
 }
-.octicon {
-    width: 16px;
-    text-align: center;
-    margin-right: 0.5em;
+h2 {
+  color: #31708f;
+  font-size: 30px;
+  margin: 0;
+  padding-left: 80px;
+  font-weight: 300;
 }
-.vcard-names, .vcard-detail {
-    list-style: none;
-    padding-left: 0.5em;
-    padding-right: 1.5em;
+.dl-horizontal dt {
+  float: left;
+  width: 60px;
+  clear: left;
+  text-align: right;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #999;
+  font-weight: 700;
 }
-.vcard-details {
-    margin: 0;
-    padding: 15px;
+.dl-horizontal > dd {
+  margin-left: 80px;
 }
 a {
-    color: #337AB7;
-    text-decoration: none;
-}
-a:focus, a:hover {
-    color: #23527C;
-    text-decoration: underline;
+  color: rgb(66, 139, 202);
 }

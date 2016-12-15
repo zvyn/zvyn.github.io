@@ -1,48 +1,44 @@
 <!DOCTYPE html>
-<!--
-Validate this:
-- HTML5: http://validator.w3.org/check?uri=http%3A%2F%2Foberkirch.org
-- CSS3:  http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Foberkirch.org
--->
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Milan Oberkirch</title>
-
-    <meta name="author" content="Milan Oberkirch">
-    <meta name="application-name" content="Milan Oberkirch"/>
-    <meta name="description" content="Milan Oberkirch: Software engeneer, experience, system admin and linux expert">
-    <meta name="dcterms.rights" content="cc-by-sa" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="msapplication-TileColor" content="#0088cc"/>
-    <meta name="msapplication-TileImage" content="/ico/ms-touch-icon.png"/>
-
-    <link rel="stylesheet" href="/css/custom.css">
-    <link rel="stylesheet" href="/css/octicons/octicons.css">
-
-    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
-    <!--[if lt IE 9]>
-        <script src="js/html5shiv.js"></script>
-    <![endif]-->
-
-    <!-- Fav and touch icons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/apple-touch-icon-144-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72-precomposed.png">
-    <link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-57-precomposed.png">
-    <link rel="shortcut icon" href="/ico/favicon.png">
-  </head>
-    <body lang="en-NZ">
-<div class="vcard" itemscope="" itemtype="http://schema.org/Person">
-<ul class="vcard-details">
-  <li class="vcard-names"><span class="octicon octicon-person"></span><strong><span class="vcard-fullname" itemprop="name">Milan David Oberkirch</span></strong></li>
-  <li class="vcard-detail" title="Bachelor of Computer Sciences"><span class="octicon octicon-mortar-board"></span>Sofware Engineer</li>
-  <li class="vcard-detail" itemprop="homeLocation" title="Wellington, New Zealand"><span class="octicon octicon-location"></span>Wellington, New Zealand</li>
-    <li class="vcard-detail"><span class="octicon octicon-mail"></span><a class="email" href="mailto:%7a%76%79%6e@%6f%62%65%72%6b%69%72%63%68.%6f%72%67">zvyn@oberkirch.org</a></li>
-  <li class="vcard-detail"><span class="octicon octicon-mark-github"></span><a href="http://github.com/zvyn" class="url">github.com/zvyn</a></li>
-</ul>
-
-    </div>
-    </body>
+<head>
+  <meta charset="utf-8">
+  <title>Milan Oberkirch</title>
+  <meta name="author" content="Milan Oberkirch">
+  <meta name="application-name" content="Milan Oberkirch"/>
+  <meta name="description" content="Milan Oberkirch: Software engeneer, developer, system admin and linux expert">
+  <meta name="dcterms.rights" content="cc-by-sa" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="msapplication-TileColor" content="#0088cc"/>
+  <meta name="msapplication-TileImage" content="/ico/ms-touch-icon.png"/>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,600" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/css/custom.css">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/ico/apple-touch-icon-144-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/ico/apple-touch-icon-114-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/ico/apple-touch-icon-72-precomposed.png">
+  <link rel="apple-touch-icon-precomposed" href="/ico/apple-touch-icon-57-precomposed.png">
+  <link rel="shortcut icon" href="/ico/favicon.png">
+</head>
+<body lang="en-US">
+  <div class="container">
+    <h2>Milan Oberkirch</h2>
+    <hr>
+    <dl class=dl-horizontal>
+      <dt>social</dt><dd>
+        <a href="http://github.com/zvyn">GitHub</a>,
+        <a href="http://google.com/+MilanOberkirch?rel=author">Google+</a>,
+        <a href="http://www.linkedin.com/in/milanoberkirch">LinkedIn</a>
+      </dd>
+      <dt class="mail">email</dt><dd>
+        <span id="obscurity">zvyn at oberkirch dot org</span>
+        <small><a class="pgp" href="https://keyserver.pgp.com/vkd/DownloadKey.event?keyid=0x66189C478186E391">(PGP)</a></small></dd>
+      <dt>canary</dt><dd>never got one</dd>
+    </dl>
+  </div>
+  <script>
+  (function(){
+    var a = '.'; var b = '@'; var c = 'org'; var d = 'zvyn'; a += c; b += 'oberkirch'; d += b + a;
+    document.getElementById('obscurity').innerHTML = d;
+  })()
+  </script>
+</body>
 </html>
