@@ -1,28 +1,10 @@
 html {
   text-size-adjustment: 100%;
 }
-hr {
-  border-color: #31708f;
-  border-style: none;
-  border-width: 0px;
-  border-top-style: solid;
-  border-top-width: 1px;
-  box-sizing: content-box;
-  margin: 20px;
-  margin-left: 80px;
-}
 .container {
   font-family: "Open Sans", Ubuntu, "Helvetica Neue", Helvetica, Arial, sans-serif;
-  padding: 48px 0 0 0;
   margin-left: auto;
   margin-right: auto;
-}
-h2 {
-  color: #31708f;
-  font-size: 30px;
-  margin: 0;
-  padding-left: 80px;
-  font-weight: 300;
 }
 .dl-horizontal dt {
   float: left;
